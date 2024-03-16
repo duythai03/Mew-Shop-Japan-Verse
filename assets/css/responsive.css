@@ -1,0 +1,139 @@
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .buycat-btn,
+  .soldout-btn {
+    padding: 15px 20px;
+  }
+
+  .cat-item {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  #contact .infoshop {
+    line-height: 2;
+  }
+
+  #contact .send {
+    padding: 14px 32px;
+  }
+
+  #footer .copyright a {
+    padding: 12px 0;
+  }
+
+  .thanhtoan input {
+    padding: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  #header {
+    overflow: hidden;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
+
+  #header .mobile-menu {
+    display: block;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #nav li {
+    display: block;
+  }
+
+  #nav li a {
+    padding: 1px 24px;
+  }
+
+  #nav .subnav {
+    position: initial;
+  }
+
+  #nav .subnav li {
+    background-color: #333;
+    padding: 5px 36px;
+  }
+
+  #nav .subnav a {
+    color: #fff;
+  }
+
+  #content .service {
+    flex-direction: column;
+  }
+
+  #content .service-img {
+    margin-bottom: 30px;
+  }
+
+  #content .service-img {
+    width: 60%;
+    height: auto;
+  }
+
+  #mewshop.content-section {
+    padding-bottom: 34px;
+  }
+
+  .cat-list {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-item {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .soldout-btn,
+  .buycat-btn {
+    width: 93%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact .infoshop {
+    line-height: 2;
+  }
+
+  #contact-name,
+  #contact-email {
+    width: 100%;
+  }
+
+  #contact-name {
+    margin: 16px 0 8px;
+  }
+
+  #contact .send {
+    width: 100%;
+  }
+
+  .modal-container {
+    width: 95%;
+  }
+
+  .modal-header {
+    height: 100px;
+  }
+
+  .thanhtoan tr,
+  .thanhtoan td {
+    display: block;
+  }
+
+  .thanhtoan input {
+    padding: 9px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mew Shop</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/cat-icon-32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <!--Header: Navigation-->
+      <div id="header">
+        <ul id="nav">
+          <li><a href="#">ホーム</a></li>
+          <li><a href="#mewshop">紹介</a></li>
+          <li><a href="#buycat">猫の品種</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li>
+            <a href="#">サービス <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="subnav">
+              <li><a href="#">トリミング</a></li>
+              <li><a href="#">猫の入浴</a></li>
+              <li><a href="#">猫の預かり</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--検索ボタン-->
+        <div class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!--モバイルメニュー-->
+        <div id="mobile-menu" class="mobile-menu">
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </div>
+      </div>
+
+      <!--Slider-->
+      <div id="slider">
+        <div class="text-content">
+          <h2 class="text-header">ニャニャ</h2>
+          <div class="text-description">
+            みんなが帰ってくるのを待っています！
+          </div>
+        </div>
+      </div>
+
+      <!--Content-->
+      <div id="content">
+        <!--About-->
+        <div id="mewshop" class="content-section">
+          <h2 class="section-header">ニャショップ</h2>
+          <p class="section-sub-header">猫を選ぶなら、ニャショップへ！</p>
+          <p class="about">
+            ニャショップへようこそ！ここは、猫の情熱を楽しむ場所です！私たちは、ただ猫を販売するお店ではなく、可愛らしく幸せな瞬間の家でもあります。私たちのエリアを見てみてください。可愛らしい猫や特別なアイテムが見つかるでしょう。私たちの情熱的なスタッフは、あなたと「小さな友達」のために最高の選択肢を共有し、サポートする準備ができています。今日すぐニャショップを訪れ、猫への愛の旅を始めましょう！
+          </p>
+
+          <div class="service">
+            <div class="service-item">
+              <p class="service-name">猫を購入する</p>
+              <img
+                src="./assets/img/service1.jpg"
+                alt="s1"
+                class="service-img"
+              />
+            </div>
+            <div class="service-item">
+              <p class="service-name">交流する</p>
+              <img
+                src="./assets/img/service2.jpg"
+                alt="s1"
+                class="service-img"
+              />
+            </div>
+            <div class="service-item">
+              <p class="service-name">ケアする</p>
+              <img
+                src="./assets/img/service3.jpg"
+                alt="s1"
+                class="service-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--Buy Cat-->
+        <div id="buycat" class="cat-section">
+          <div class="content-section">
+            <h2 class="section-header text-white">猫の品種</h2>
+            <p class="section-sub-header text-white">人気のある猫の品種：</p>
+
+            <!--Top Favorite Cats-->
+            <ul class="top-cat">
+              <li>Munchkin <span class="sold-out">売り切れ</span></li>
+              <li>Scottish Fold <span class="sold-out">売り切れ</span></li>
+              <li>アメリカンショートヘア <span class="quantity">3</span></li>
+            </ul>
+
+            <!--Cats-->
+            <div class="cat-list">
+              <div class="cat-item">
+                <img
+                  src="./assets/img/munchkin.jpg"
+                  alt="munchkin"
+                  class="cat-img"
+                />
+                <div class="cat-content">
+                  <h3 class="cat-header">マンチカン</h3>
+                  <p class="cat-quantity">売り切れ</p>
+                  <p class="cat-description">
+                    Munchkinは、ベトナムで最も飼われている猫の品種です。この神秘的な短足猫は、アメリカから起源を持ち、ソーセージ猫やコーギー猫とも呼ばれています。
+                  </p>
+                  <div class="soldout-btn">売り切れ</div>
+                </div>
+              </div>
+
+              <div class="cat-item">
+                <img
+                  src="./assets/img/scottishfold.jpeg"
+                  alt="scottishfold"
+                  class="cat-img"
+                />
+                <div class="cat-content">
+                  <h3 class="cat-header">スコティッシュフォールド</h3>
+                  <p class="cat-quantity">売り切れ</p>
+                  <p class="cat-description">
+                    この愛らしい折れ耳猫の品種は、スコットランドが起源です。Scottish
+                    Foldの外見と内面の性格はどちらも非常に可愛らしく、多くの人々に愛されています。
+                  </p>
+                  <div class="soldout-btn">売り切れ</div>
+                </div>
+              </div>
+
+              <div class="cat-item">
+                <img
+                  src="./assets/img/anh-long-ngan.jpeg"
+                  alt="anh-long-ngan"
+                  class="cat-img"
+                />
+                <div class="cat-content">
+                  <h3 class="cat-header">アメリカンショートヘア</h3>
+                  <p class="cat-quantity">在庫: 3</p>
+                  <p class="cat-description">
+                    この可愛らしい猫は、非常に穏やかで控えめな性格を持ち、一人で遊ぶことを好み、登ることやジャンプすることは好きではありません。
+                  </p>
+                  <button class="buycat-btn js-buy-cat">15,770円</button>
+                </div>
+              </div>
+
+              <div class="cat-item">
+                <img
+                  src="./assets/img/anh-long-dai.jpg"
+                  alt="anh-long-dai"
+                  class="cat-img"
+                />
+                <div class="cat-content">
+                  <h3 class="cat-header">アメリカンロングヘア</h3>
+                  <p class="cat-quantity">在庫: 10</p>
+                  <p class="cat-description">
+                    アメリカンロングヘアは、愛らしく飼いやすい猫の品種であり、飼い主に近づきますが、運動不足になりやすいため、バランスの取れた食事が必要です。
+                  </p>
+                  <button class="buycat-btn js-buy-cat">14,250円</button>
+                </div>
+              </div>
+
+              <div class="cat-item">
+                <img
+                  src="./assets/img/turkish-angora.jpeg"
+                  alt="meo-turkish"
+                  class="cat-img"
+                />
+                <div class="cat-content">
+                  <h3 class="cat-header">トルコアンゴラ</h3>
+                  <p class="cat-quantity">在庫: 12</p>
+                  <p class="cat-description">
+                    トルコアンゴラは、トルコの貴重な猫とされています。美しい外見と優雅さで魅了されます。
+                  </p>
+                  <button class="buycat-btn js-buy-cat">18,430円</button>
+                </div>
+              </div>
+
+              <div class="cat-item">
+                <img src="./assets/img/xiem.jpg" alt="xiem" class="cat-img" />
+                <div class="cat-content">
+                  <h3 class="cat-header">シャム猫</h3>
+                  <p class="cat-quantity">在庫: 14</p>
+                  <p class="cat-description">
+                    シャム猫は、タイから起源を持つ猫の品種です。この東洋の短毛猫は非常に賢く、素早く、昆虫を捕まえるのが得意です。
+                  </p>
+                  <button class="buycat-btn js-buy-cat">7,980円</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact" class="content-section">
+          <h2 class="section-header">お問い合わせ</h2>
+          <p class="section-sub-header">
+            ご質問がある場合は、メッセージを送ってください
+          </p>
+          <div class="contact">
+            <div class="infoshop">
+              <p>
+                <i class="fa-solid fa-location-dot"></i> ビエンホア、ドンナイ
+              </p>
+              <p><i class="fa-solid fa-phone"></i> 電話番号: 0123456789</p>
+              <p>
+                <i class="fa-solid fa-envelope"></i> メール: mewshop@gmail.com
+              </p>
+            </div>
+            <div class="message">
+              <form action="">
+                <div class="message-row1">
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="contact-name"
+                    placeholder="お名前"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="contact-email"
+                    name="contact-email"
+                    placeholder="メールアドレス"
+                    required
+                  />
+                </div>
+                <div class="message-row2">
+                  <input
+                    type="text"
+                    id="contact-message"
+                    name="contact-message"
+                    placeholder="メッセージ"
+                    required
+                  />
+                </div>
+                <div class="message-row3">
+                  <button class="send">送信</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="map" class="map-section">
+          <img src="./assets/img/map.jpg" alt="map" />
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="social-list">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-pinterest"></i></a>
+          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p class="copyright">
+          Powered by
+          <a href="https://www.w3schools.com/" target="_blank">w3.css</a>
+        </p>
+      </div>
+    </div>
+
+    <!--Modal Thanh Toan-->
+    <div class="modal js-modal">
+      <div class="modal-container js-modal-container">
+        <div class="modal-close js-modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <header class="modal-header">
+          <i class="fa-solid fa-cat modal-icon-cat"></i>
+          支払い
+        </header>
+
+        <div class="modal-body">
+          <form>
+            <table class="thanhtoan">
+              <tr>
+                <td>
+                  <label for="hoten">お名前</label>
+                  <input type="text" id="hoten" name="hoten" required />
+                </td>
+                <td>
+                  <label for="sdt">電話番号</label>
+                  <input type="number" id="sdt" name="sdt" required />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="email">メールアドレス</label>
+                  <input type="text" id="email" name="email" required />
+                </td>
+                <td>
+                  <label for="soluong">数量</label>
+                  <input
+                    type="number"
+                    id="soluong"
+                    name="soluong"
+                    required
+                    min="1"
+                    max="10"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button id="modal-confirm" name="modal-confirm">
+                    確認する <i class="fa-solid fa-check"></i>
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <footer class="modal-footer">
+          <p class="modal-help">サポートが必要ですか？ <a href="">こちら</a></p>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      const buyBtns = document.querySelectorAll(".js-buy-cat");
+      const modal = document.querySelector(".js-modal");
+      const modalContainer = document.querySelector(".js-modal-container");
+      const modelClose = document.querySelector(".js-modal-close");
+
+      function showBuyCat() {
+        modal.classList.add("open");
+      }
+      for (const buyBtn of buyBtns) {
+        buyBtn.addEventListener("click", showBuyCat);
+      }
+
+      function hideBuyCat() {
+        modal.classList.remove("open");
+      }
+      modelClose.addEventListener("click", hideBuyCat);
+      modal.addEventListener("click", hideBuyCat);
+      modalContainer.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+    </script>
+
+    <script>
+      var header = document.getElementById("header");
+      var mobileMenu = document.getElementById("mobile-menu");
+      var headerHeight = header.clientHeight;
+
+      // Đóng / mở Mobile Menu
+      mobileMenu.onclick = function () {
+        var isClose = header.clientHeight === headerHeight;
+        if (isClose) {
+          header.style.height = "auto";
+        } else {
+          header.style.height = null;
+        }
+      };
+
+      // Tự động đóng khi click 1 phần tử trong menu
+      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+        menuItem.onclick = function (event) {
+          var isParentMenu =
+            this.nextElementSibling &&
+            this.nextElementSibling.classList.contains("subnav");
+          if (isParentMenu) {
+            event.preventDefault();
+          } else {
+            header.style.height = null;
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
