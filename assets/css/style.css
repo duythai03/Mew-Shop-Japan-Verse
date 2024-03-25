@@ -290,10 +290,99 @@ html {
   opacity: 0.6;
 }
 
-#content .contact {
+/* Blog */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.blog-item {
+  background-color: #000;
+  border-radius: 3px;
+  max-height: 380px;
+  position: relative;
+}
+
+.blog-item:hover {
+  opacity: 0.8;
+}
+
+.blog-item a {
+  text-decoration: none;
+}
+
+.blog-img {
+  width: 100%;
+  max-height: 215px;
+  object-fit: cover;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.blog-title {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0 16px;
+  color: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.blog-description {
+  margin: 16px 0 32px 0;
+  line-height: 1.5;
+  color: #fff;
+  opacity: 0.8;
+  padding: 0 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.view-details-btn:hover {
+  cursor: pointer;
+  color: #ff7f50;
+}
+
+.view-all-blogs-btn {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  width: 190px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.view-all-blogs-btn:hover {
+  cursor: pointer;
+  background-color: #ff7f50;
+}
+
+/* Contact */
+.contact-section {
+  background-color: #000;
+}
+.contact-section #content.content-section {
+  padding: 90px 16px;
+}
+
+.contact {
   margin-top: 48px;
   display: flex;
   justify-content: space-between;
+  color: #fff;
 }
 
 .contact i {
@@ -310,6 +399,8 @@ html {
 #contact-message {
   padding: 9px;
   border: 0.8px solid #ccc;
+  border-radius: 2px;
+  outline: none;
 }
 
 #contact-message {
@@ -323,9 +414,10 @@ html {
 
 .contact .send {
   padding: 8px 24px;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border: none;
+  border-radius: 2px;
 }
 
 .contact .send:hover {
