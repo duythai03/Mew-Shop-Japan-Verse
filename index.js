@@ -33,7 +33,6 @@ mobileMenu.onclick = function () {
     header.style.height = null;
   }
 };
-
 // Tự động đóng khi click 1 phần tử trong menu
 var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
 for (var i = 0; i < menuItems.length; i++) {
@@ -49,3 +48,38 @@ for (var i = 0; i < menuItems.length; i++) {
     }
   };
 }
+
+// SLider
+const listImg = document.querySelector(".list-img");
+const imgs = document.querySelectorAll(".slider-img");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+let index = 0;
+
+const handleChangeSlide = () => {
+  index = index + 1 < imgs.length ? index + 1 : 0;
+  let width = imgs[0].offsetWidth;
+  listImg.style.transform = `translateX(-${width * index}px)`;
+};
+
+let handleEventChangeSlide = setInterval(() => {
+  handleChangeSlide();
+}, 4000);
+
+nextBtn.addEventListener("click", function () {
+  clearInterval(handleEventChangeSlide);
+  handleChangeSlide();
+  handleEventChangeSlide = setInterval(() => {
+    handleChangeSlide();
+  }, 4000);
+});
+
+prevBtn.addEventListener("click", function () {
+  clearInterval(handleEventChangeSlide);
+  index = index - 1 < 0 ? imgs.length - 1 : index - 1;
+  let width = imgs[0].offsetWidth;
+  listImg.style.transform = `translateX(-${width * index}px)`;
+  handleEventChangeSlide = setInterval(() => {
+    handleChangeSlide();
+  }, 4000);
+});
