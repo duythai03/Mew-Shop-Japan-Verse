@@ -141,11 +141,13 @@ html {
 }
 
 .prev-btn {
-  left: 10px;
+  left: 0px;
+  padding: 0 15px;
 }
 
 .next-btn {
-  right: 10px;
+  right: 0px;
+  padding: 0 15px;
 }
 
 #slider .text-content {
