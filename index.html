@@ -6,6 +6,7 @@
     <title>Mew Shop</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="icon" type="image/x-icon" href="/assets/img/cat-icon-32.png" />
     <link
       rel="stylesheet"
@@ -57,7 +58,7 @@
       <!--Content-->
       <div id="content">
         <!--About-->
-        <div id="mewshop" class="content-section">
+        <div id="mewshop" class="grid wide">
           <h2 class="section-header">ニャショップ</h2>
           <p class="section-sub-header">猫を選ぶなら、ニャショップへ！</p>
           <p class="about">
@@ -65,36 +66,46 @@
           </p>
 
           <div class="service">
-            <div class="service-item">
-              <p class="service-name">猫を購入する</p>
-              <img
-                src="./assets/img/service1.jpg"
-                alt="s1"
-                class="service-img"
-              />
-            </div>
-            <div class="service-item">
-              <p class="service-name">交流する</p>
-              <img
-                src="./assets/img/service2.jpg"
-                alt="s1"
-                class="service-img"
-              />
-            </div>
-            <div class="service-item">
-              <p class="service-name">ケアする</p>
-              <img
-                src="./assets/img/service3.jpg"
-                alt="s1"
-                class="service-img"
-              />
+            <div class="row sm-gutter">
+              <div class="col l-4 m-4 c-12">
+                <div class="service-item">
+                  <p class="service-name">猫を購入する</p>
+                  <img
+                    src="./assets/img/service1.jpg"
+                    alt="s1"
+                    class="service-img"
+                  />
+                </div>
+              </div>
+
+              <div class="col l-4 m-4 c-12">
+                <div class="service-item">
+                  <p class="service-name">交流する</p>
+                  <img
+                    src="./assets/img/service2.jpg"
+                    alt="s1"
+                    class="service-img"
+                  />
+                </div>
+              </div>
+
+              <div class="col l-4 m-4 c-12">
+                <div class="service-item">
+                  <p class="service-name">ケアする</p>
+                  <img
+                    src="./assets/img/service3.jpg"
+                    alt="s1"
+                    class="service-img"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <!--Buy Cat-->
         <div id="buycat" class="cat-section">
-          <div class="content-section">
+          <div class="grid wide">
             <h2 class="section-header text-white">猫の品種</h2>
             <p class="section-sub-header text-white">人気のある猫の品種：</p>
 
@@ -107,193 +118,228 @@
 
             <!--Cats-->
             <div class="cat-list">
-              <div class="cat-item">
-                <img
-                  src="./assets/img/munchkin.jpg"
-                  alt="munchkin"
-                  class="cat-img"
-                />
-                <div class="cat-content">
-                  <h3 class="cat-header">マンチカン</h3>
-                  <p class="cat-quantity">売り切れ</p>
-                  <p class="cat-description">
-                    Munchkinは、ベトナムで最も飼われている猫の品種です。この神秘的な短足猫は、アメリカから起源を持ち、ソーセージ猫やコーギー猫とも呼ばれています。
-                  </p>
-                  <div class="soldout-btn">売り切れ</div>
+              <div class="row sm-gutter">
+                <div class="col l-4 m-6 c-12">
+                  <div class="cat-item">
+                    <img
+                      src="./assets/img/munchkin.jpg"
+                      alt="munchkin"
+                      class="cat-img"
+                    />
+                    <div class="cat-content">
+                      <h3 class="cat-header">マンチカン</h3>
+                      <p class="cat-quantity">売り切れ</p>
+                      <p class="cat-description">
+                        Munchkinは、ベトナムで最も飼われている猫の品種です。この神秘的な短足猫は、アメリカから起源を持ち、ソーセージ猫やコーギー猫とも呼ばれています。
+                      </p>
+                      <div class="soldout-btn">売り切れ</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="cat-item">
-                <img
-                  src="./assets/img/scottishfold.jpeg"
-                  alt="scottishfold"
-                  class="cat-img"
-                />
-                <div class="cat-content">
-                  <h3 class="cat-header">スコティッシュフォールド</h3>
-                  <p class="cat-quantity">売り切れ</p>
-                  <p class="cat-description">
-                    この愛らしい折れ耳猫の品種は、スコットランドが起源です。Scottish
-                    Foldの外見と内面の性格はどちらも非常に可愛らしく、多くの人々に愛されています。
-                  </p>
-                  <div class="soldout-btn">売り切れ</div>
+                <div class="col l-4 m-6 c-12">
+                  <div class="cat-item">
+                    <img
+                      src="./assets/img/scottishfold.jpeg"
+                      alt="scottishfold"
+                      class="cat-img"
+                    />
+                    <div class="cat-content">
+                      <h3 class="cat-header">スコティッシュフォールド</h3>
+                      <p class="cat-quantity">売り切れ</p>
+                      <p class="cat-description">
+                        この愛らしい折れ耳猫の品種は、スコットランドが起源です。Scottish
+                        Foldの外見と内面の性格はどちらも非常に可愛らしく、多くの人々に愛されています。
+                      </p>
+                      <div class="soldout-btn">売り切れ</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="cat-item">
-                <img
-                  src="./assets/img/anh-long-ngan.jpeg"
-                  alt="anh-long-ngan"
-                  class="cat-img"
-                />
-                <div class="cat-content">
-                  <h3 class="cat-header">アメリカンショートヘア</h3>
-                  <p class="cat-quantity">在庫: 3</p>
-                  <p class="cat-description">
-                    この可愛らしい猫は、非常に穏やかで控えめな性格を持ち、一人で遊ぶことを好み、登ることやジャンプすることは好きではありません。
-                  </p>
-                  <button class="buycat-btn js-buy-cat">15,770円</button>
+                <div class="col l-4 m-6 c-12">
+                  <div class="cat-item">
+                    <img
+                      src="./assets/img/anh-long-ngan.jpeg"
+                      alt="anh-long-ngan"
+                      class="cat-img"
+                    />
+                    <div class="cat-content">
+                      <h3 class="cat-header">アメリカンショートヘア</h3>
+                      <p class="cat-quantity">在庫: 3</p>
+                      <p class="cat-description">
+                        この可愛らしい猫は、非常に穏やかで控えめな性格を持ち、一人で遊ぶことを好み、登ることやジャンプすることは好きではありません。
+                      </p>
+                      <button class="buycat-btn js-buy-cat">15,770円</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="cat-item">
-                <img
-                  src="./assets/img/anh-long-dai.jpg"
-                  alt="anh-long-dai"
-                  class="cat-img"
-                />
-                <div class="cat-content">
-                  <h3 class="cat-header">アメリカンロングヘア</h3>
-                  <p class="cat-quantity">在庫: 10</p>
-                  <p class="cat-description">
-                    アメリカンロングヘアは、愛らしく飼いやすい猫の品種であり、飼い主に近づきますが、運動不足になりやすいため、バランスの取れた食事が必要です。
-                  </p>
-                  <button class="buycat-btn js-buy-cat">14,250円</button>
+                <div class="col l-4 m-6 c-12">
+                  <div class="cat-item">
+                    <img
+                      src="./assets/img/anh-long-dai.jpg"
+                      alt="anh-long-dai"
+                      class="cat-img"
+                    />
+                    <div class="cat-content">
+                      <h3 class="cat-header">アメリカンロングヘア</h3>
+                      <p class="cat-quantity">在庫: 10</p>
+                      <p class="cat-description">
+                        アメリカンロングヘアは、愛らしく飼いやすい猫の品種であり、飼い主に近づきますが、運動不足になりやすいため、バランスの取れた食事が必要です。
+                      </p>
+                      <button class="buycat-btn js-buy-cat">14,250円</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="cat-item">
-                <img
-                  src="./assets/img/turkish-angora.jpeg"
-                  alt="meo-turkish"
-                  class="cat-img"
-                />
-                <div class="cat-content">
-                  <h3 class="cat-header">トルコアンゴラ</h3>
-                  <p class="cat-quantity">在庫: 12</p>
-                  <p class="cat-description">
-                    トルコアンゴラは、トルコの貴重な猫とされています。美しい外見と優雅さで魅了されます。
-                  </p>
-                  <button class="buycat-btn js-buy-cat">18,430円</button>
+                <div class="col l-4 m-6 c-12">
+                  <div class="cat-item">
+                    <img
+                      src="./assets/img/turkish-angora.jpeg"
+                      alt="meo-turkish"
+                      class="cat-img"
+                    />
+                    <div class="cat-content">
+                      <h3 class="cat-header">トルコアンゴラ</h3>
+                      <p class="cat-quantity">在庫: 12</p>
+                      <p class="cat-description">
+                        トルコアンゴラは、トルコの貴重な猫とされています。美しい外見と優雅さで魅了されます。
+                      </p>
+                      <button class="buycat-btn js-buy-cat">18,430円</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="cat-item">
-                <img src="./assets/img/xiem.jpg" alt="xiem" class="cat-img" />
-                <div class="cat-content">
-                  <h3 class="cat-header">シャム猫</h3>
-                  <p class="cat-quantity">在庫: 14</p>
-                  <p class="cat-description">
-                    シャム猫は、タイから起源を持つ猫の品種です。この東洋の短毛猫は非常に賢く、素早く、昆虫を捕まえるのが得意です。
-                  </p>
-                  <button class="buycat-btn js-buy-cat">7,980円</button>
+                <div class="col l-4 m-6 c-12">
+                  <div class="cat-item">
+                    <img
+                      src="./assets/img/xiem.jpg"
+                      alt="xiem"
+                      class="cat-img"
+                    />
+                    <div class="cat-content">
+                      <h3 class="cat-header">シャム猫</h3>
+                      <p class="cat-quantity">在庫: 14</p>
+                      <p class="cat-description">
+                        シャム猫は、タイから起源を持つ猫の品種です。この東洋の短毛猫は非常に賢く、素早く、昆虫を捕まえるのが得意です。
+                      </p>
+                      <button class="buycat-btn js-buy-cat">7,980円</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="content-section" id="blog">
+        <!-- Blog -->
+        <div class="grid wide" id="blog">
           <h2 class="section-header">ブログ</h2>
           <p class="section-sub-header">ネコに関する有益な情報を学ぶ</p>
           <div class="blog-container">
-            <div class="blog-item">
-              <a href="#">
-                <img
-                  src="./assets/img/blog1.jpg"
-                  alt="Cat 1"
-                  class="blog-img"
-                />
-                <h3 class="blog-title">
-                  ネコがあなたに怒っているサインを見分ける方法
-                </h3>
-                <p class="blog-description">
-                  あなたのネコが普段と違う態度を見せているのを見たことがありますか？心配しないでください！ネコの飼い主にとって、ペットが怒っているかどうかを見分けることは重要なスキルです。この記事では、ネコが怒っているサインを見分ける方法をご紹介します。
-                </p>
-              </a>
-            </div>
-            <div class="blog-item">
-              <a href="#">
-                <img
-                  src="./assets/img/blog2.jpg"
-                  alt="Cat 2"
-                  class="blog-img"
-                />
-                <h3 class="blog-title">あなたのネコをいつも幸せにする方法</h3>
-                <p class="blog-description">
-                  ネコの幸福は、世話や養育の重要な部分です。あなたのペットがいつも幸せで楽しい時間を過ごすためには、この記事を通じて最善の方法を学びましょう。
-                </p>
-              </a>
-            </div>
-            <div class="blog-item">
-              <a href="#">
-                <img
-                  src="./assets/img/blog3.jpg"
-                  alt="Cat 3"
-                  class="blog-img"
-                />
-                <h3 class="blog-title">ネコがあなたを信頼しているサイン5つ</h3>
-                <p class="blog-description">
-                  ネコがあなたを信頼すると、特別な絆が生まれ、お互いに喜びをもたらします。この記事では、ネコが安心し、あなたを信頼しているときによく見られる5つのサインを探求します。
-                </p>
-              </a>
-            </div>
-            <div class="blog-item">
-              <a href="#">
-                <img
-                  src="./assets/img/blog4.jpg"
-                  alt="Cat 4"
-                  class="blog-img"
-                />
-                <h3 class="blog-title">ネコに何を食べさせるべきか</h3>
-                <p class="blog-description">
-                  あなたのネコに適切な食事を選ぶことは、彼らの健康と幸福のために重要な要素です。この記事では、一般的な食べ物の選択肢を探求し、ペットのために最善の選択肢を決定するためのアドバイスを提供します。
-                </p>
-              </a>
-            </div>
-            <div class="blog-item">
-              <a href="#">
-                <img
-                  src="./assets/img/blog5.jpg"
-                  alt="Cat 5"
-                  class="blog-img"
-                />
-                <h3 class="blog-title">ネコが好むおもちゃ</h3>
-                <p class="blog-description">
-                  適切なおもちゃを提供することは、あなたのネコの幸福と活発さを維持するための重要な要素です。この記事では、ネコがよく好むおもちゃの種類を探求し、ペットに最適なおもちゃを選ぶためのいくつかのヒントを提供します。
-                </p>
-              </a>
-            </div>
-            <div class="blog-item">
-              <a href="#">
-                <img
-                  src="./assets/img/blog6.jpg"
-                  alt="Cat 6"
-                  class="blog-img"
-                />
-                <h3 class="blog-title">子猫の世話の仕方</h3>
-                <p class="blog-description">
-                  子猫の世話は楽しい経験ですが、準備と忍耐が必要です。この記事では、効果的で愛情深く子猫の世話をするための基本的なステップとアドバイスを提供します。
-                </p>
-              </a>
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-6 m-6 c-12">
+                  <div class="blog-item">
+                    <a href="#">
+                      <img
+                        src="./assets/img/blog1.jpg"
+                        alt="Cat 1"
+                        class="blog-img"
+                      />
+                      <h3 class="blog-title">
+                        ネコがあなたに怒っているサインを見分ける方法
+                      </h3>
+                      <p class="blog-description">
+                        あなたのネコが普段と違う態度を見せているのを見たことがありますか？心配しないでください！ネコの飼い主にとって、ペットが怒っているかどうかを見分けることは重要なスキルです。この記事では、ネコが怒っているサインを見分ける方法をご紹介します。
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                  <div class="blog-item">
+                    <a href="#">
+                      <img
+                        src="./assets/img/blog2.jpg"
+                        alt="Cat 2"
+                        class="blog-img"
+                      />
+                      <h3 class="blog-title">
+                        あなたのネコをいつも幸せにする方法
+                      </h3>
+                      <p class="blog-description">
+                        ネコの幸福は、世話や養育の重要な部分です。あなたのペットがいつも幸せで楽しい時間を過ごすためには、この記事を通じて最善の方法を学びましょう。
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                  <div class="blog-item">
+                    <a href="#">
+                      <img
+                        src="./assets/img/blog3.jpg"
+                        alt="Cat 3"
+                        class="blog-img"
+                      />
+                      <h3 class="blog-title">
+                        ネコがあなたを信頼しているサイン5つ
+                      </h3>
+                      <p class="blog-description">
+                        ネコがあなたを信頼すると、特別な絆が生まれ、お互いに喜びをもたらします。この記事では、ネコが安心し、あなたを信頼しているときによく見られる5つのサインを探求します。
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                  <div class="blog-item">
+                    <a href="#">
+                      <img
+                        src="./assets/img/blog4.jpg"
+                        alt="Cat 4"
+                        class="blog-img"
+                      />
+                      <h3 class="blog-title">ネコに何を食べさせるべきか</h3>
+                      <p class="blog-description">
+                        あなたのネコに適切な食事を選ぶことは、彼らの健康と幸福のために重要な要素です。この記事では、一般的な食べ物の選択肢を探求し、ペットのために最善の選択肢を決定するためのアドバイスを提供します。
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                  <div class="blog-item">
+                    <a href="#">
+                      <img
+                        src="./assets/img/blog5.jpg"
+                        alt="Cat 5"
+                        class="blog-img"
+                      />
+                      <h3 class="blog-title">ネコが好むおもちゃ</h3>
+                      <p class="blog-description">
+                        適切なおもちゃを提供することは、あなたのネコの幸福と活発さを維持するための重要な要素です。この記事では、ネコがよく好むおもちゃの種類を探求し、ペットに最適なおもちゃを選ぶためのいくつかのヒントを提供します。
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                  <div class="blog-item">
+                    <a href="#">
+                      <img
+                        src="./assets/img/blog6.jpg"
+                        alt="Cat 6"
+                        class="blog-img"
+                      />
+                      <h3 class="blog-title">子猫の世話の仕方</h3>
+                      <p class="blog-description">
+                        子猫の世話は楽しい経験ですが、準備と忍耐が必要です。この記事では、効果的で愛情深く子猫の世話をするための基本的なステップとアドバイスを提供します。
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           <a href="#" class="view-all-blogs-btn">すべてのブログを表示</a>
         </div>
 
+        <!-- Contact -->
         <div id="contact" class="contact-section">
-          <div class="content-section">
+          <div class="grid wide">
             <h2 class="section-header text-white">お問い合わせ</h2>
             <p class="section-sub-header text-white">
               ご質問がある場合は、メッセージを送ってください
