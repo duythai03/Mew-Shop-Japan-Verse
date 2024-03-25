@@ -129,6 +129,7 @@ html {
 .btn {
   font-size: 45px;
   color: #999;
+  opacity: 0.5;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
