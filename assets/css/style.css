@@ -480,7 +480,6 @@ html {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 2;
 }
 
 .modal-container {
@@ -489,6 +488,7 @@ html {
   max-width: calc(100% - 32px);
   position: relative;
   animation: modalFadeIn ease 0.3s;
+  z-index: 2;
 }
 
 .modal-body {
